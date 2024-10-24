@@ -1,0 +1,9 @@
+spring:
+  kafka:
+    streams:
+      application-id: test
+    properties:
+      schema.registry.url: mock://test-scope
+      default.key.serde: org.apache.kafka.common.serialization.Serdes$StringSerde
+      default.value.serde: org.apache.kafka.common.serialization.Serdes$StringSerde
+      default.deserialization.exception.handler: org.apache.kafka.streams.errors.LogAndContinueExceptionHandler
